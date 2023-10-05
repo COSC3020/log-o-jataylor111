@@ -30,7 +30,7 @@ We are left with;
 
 $T(n) \leq g(\log_{5} n)$, $T(n) \leq h(\log_{2} n)$
 
-Now using the rule that $O$ ignores constants we have;
+Because the definition of $O$ says we can ignore constants;
 
 $T(n) \in O(\log_{5} n)$, $T(n) \in O(\log_{2} n)$
 
@@ -43,5 +43,3 @@ and
 $\forall T(n) \in O(log_{5} n) \implies T(n) \in (\log_{3} n)$
 
 $\therefore O(\log_{3} n) = O(log_{5} n)$
-
-I apologize for taking so long on the exercises, I am working on them but with not having made a lot of progress I did this one to get something to you
