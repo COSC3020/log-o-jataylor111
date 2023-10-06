@@ -24,13 +24,13 @@ Then using the property $(\log_{b} a) = (\frac{1}{(\log_{k} b)})(\log_{k} a)$ wh
 
 $T(n) \leq c(\frac{1}{(\log_{5} 2)})(\log_{5} n)$, $T(n) \leq c(\frac{1}{(\log_{2} 5)})(\log_{2} n)$
 
-We can now let $c(\frac{1}{(\log_{5} 2)})$ and $c(\frac{1}{(\log_{2} 5)})$ = g and h respectively, where g and h are both constants.
+We can now let $c(\frac{1}{(\log_{5} 2)})$ and $c(\frac{1}{(\log_{2} 5)})$ both equal $c$, which means that $c$ can be any constant;
 
 We are left with;
 
-$T(n) \leq g(\log_{5} n)$, $T(n) \leq h(\log_{2} n)$
+$T(n) \leq c(\log_{5} n)$, $T(n) \leq c(\log_{2} n)$
 
-Because the definition of $O$ says we can ignore constants;
+Since $c$ can be any constant it is inconsiquential and can be ignored, which leaves us with;
 
 $T(n) \in O(\log_{5} n)$, $T(n) \in O(\log_{2} n)$
 
