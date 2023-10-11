@@ -22,21 +22,21 @@ $T(n) \in O(\log_{5} n) \iff \exists c, n_0: T(n) \leq c(\log_{5} n) \forall n \
 
 Then using the property $(\log_{b} a) = (\frac{1}{(\log_{k} b)})(\log_{k} a)$ where k is any base, we can set up the following;
 
-$T(n) \leq c\frac{1}{(\log_{5} 2)}(\log_{5} n)$, $T(n) \leq c\frac{1}{(\log_{2} 5)}(\log_{2} n)$
+$T(n) \leq \frac{1}{(\log_{5} 2)}(\log_{5} n)$, $T(n) \leq \frac{1}{(\log_{2} 5)}(\log_{2} n)$
 
-We can now let $c\frac{1}{(\log_{5} 2)}$ = $d$ $c\frac{1}{(\log_{2} 5)}$ = $e$, where $d$ and $e$ are both constants;
+We can now let $\frac{1}{(\log_{5} 2)}$ = $d$ and $\frac{1}{(\log_{2} 5)}$ = $u$, where $d$ and $u$ are both constants;
 
 We are left with;
 
-$T(n) \leq d\log_{5} n$, $T(n) \leq e\log_{2} n$
+$T(n) \leq d\log_{5} n$, $T(n) \leq u\log_{2} n$
 
-Since both $d$ and $e$ can both be any constant they is inconsiquential and can be ignored, which leaves us with;
+The log rules used above showed we can choose any base for our log, and as such $d$ and $u$ can be any constant we choose, so we can focus on our $\log_k n$ functions in $O$;
 
 $T(n) \in O(\log_{5} n)$, $T(n) \in O(\log_{2} n)$
 
 Then
 
-$\forall T(n) \in O(log_{3} n) \implies T(n) \in (\log_{3} n)$
+$\forall T(n) \in O(log_{3} n) \implies T(n) \in (\log_{5} n)$
 
 and
 
